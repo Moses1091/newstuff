@@ -1,0 +1,154 @@
+<html><head><base href="https://prayerroomministries.org/prayer-request">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRAYER ROOM - Prayer Request</title>
+<style>
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+header {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffd700;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+h2 {
+    color: #4a4a4a;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+button[type="submit"] {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #ffec8b;
+}
+#prayer-music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#prayer-music-player button {
+    margin: 5px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#prayer-music-player button:hover {
+    background-color: #333;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+<header>
+    <h1>PRAYER ROOM</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/prayer-request">Prayer Request</a></li>
+        <li><a href="/live-stream">Live Stream</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <h2>Submit Your Prayer Request</h2>
+    <form id="prayer-request-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="prayer-request">Your Prayer Request:</label>
+        <textarea id="prayer-request" name="prayer-request" required></textarea>
+
+        <label for="anonymous">
+            <input type="checkbox" id="anonymous" name="anonymous"> Keep my request anonymous
+        </label>
+
+        <button type="submit">Submit Prayer Request</button>
+    </form>
+</main>
